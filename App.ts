@@ -63,7 +63,7 @@ const Read_the_file_from_this_stream = async (fileStream: any) => {
             }
         });
     
-        
+        // when all the lines in the file have been read
         rl.on('close', () => {
             // loop through wordFrequency and arrange the words into the final result
             for (const [word, frequency] of Object.entries(wordFrequency)) {
